@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Pangolin&display=swap');*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;}
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+header
+{
+    color: #fff;
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 200px;
+    transition: 0.5 ease;
+    background: rgba(0,0,0,0.5);
+}
+header .logo
+{   
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header .nav
+{
+    display: flex;    
+}
+header .nav .nav-items a
+{
+    color: #fff;
+    padding: 2px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+header .nav .nav-items a::before
+{
+
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+    
+}
+header .nav .nav-items a:hover:before
+{
+    width: 100%;
+}
+.sec1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url(sec1.jpg);
+    background-size: cover;
+}
+.sec1-dis 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3 ),rgba(0,0,0,1)),bottom;
+    position: relative;
+}
+.sec1-dis-title 
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 50%;
+    margin-top: 66px;
+}
+.sec1-dis-title h1 ,.sec1-dis2-title h1
+{
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    color: #fff;
+    font-size: 45px;
+
+}
+.sec1-dis-title span
+{
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 70px;
+}
+.sec2
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url(sec1.jpg);
+    background-size: cover;
+}
+.sec1-dis2-title{
+    position: absolute;
+    width: 50%;
+    margin-top: 66px;
+}
+.list{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+.list li
+{
+    color: #fff;
+    font-size: 22px;
+}
+.det
+{
+    position: absolute;
+    bottom: 60px;
+    left: 40%;
+}
+.det h2
+{
+    color: #fefefe;
+    font-size: 30px;
+}
+.det a
+{
+    text-decoration: none;
+    color:bisque;
+    transition: 0.5s;
+}
+.det a:hover
+{
+    color:coral;
+    transition: 0.5s;
+}
